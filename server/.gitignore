@@ -1,3 +1,8 @@
+# modulos adquiridos com npm install
 node_modules
-# Keep environment variables out of version control
+
+# dados de connfiguração
 .env
+
+# testes unitários adquiridos com npm run test
+coverage
