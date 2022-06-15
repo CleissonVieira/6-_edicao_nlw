@@ -1,4 +1,5 @@
 import AppLoading from 'expo-app-loading';
+
 import { View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { useFonts, Inter_400Regular, Inter_500Medium } from '@expo-google-fonts/inter';
