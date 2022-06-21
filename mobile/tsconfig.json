@@ -2,5 +2,8 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true
+  },
+  "paths": {
+    "~@gorhom/bottom-sheet": ["node_modules/@gorhom/bottom-sheet/src"]
   }
 }
