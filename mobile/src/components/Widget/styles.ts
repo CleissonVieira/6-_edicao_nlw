@@ -15,5 +15,17 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     right: 16,
     bottom: getBottomSpace() + 16,
+  },
+  wrapperRBSheet: {
+    backgroundColor: 'transparent',
+  },
+  containerRBSheet: {
+    backgroundColor: theme.colors.surface_primary,
+    paddingBottom: getBottomSpace() + 16
+  },
+  draggableIconRBSheet: {
+    backgroundColor: theme.colors.text_primary,
+    width: 56,
+    padding: 0
   }
 });

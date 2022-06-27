@@ -1,18 +1,24 @@
 import React, { useRef } from 'react';
 import { TouchableOpacity } from 'react-native';
 import { ChatTeardropDots } from 'phosphor-react';
-import BottomSheet from '@gorhom/bottom-sheet';
+import RBSheet from 'react-native-raw-bottom-sheet';
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
+
+import { Options } from '../Options';
+import { Form } from '../Form';
 
 import { styles } from './styles';
 import { theme } from '../../theme';
+import { feedbackTypes } from '../../utils/feedbackTypes';
+
+export type FeedbackType = keyof typeof feedbackTypes;
 
 function Widget() {
 
-  const bottomSheetRef = useRef<BottomSheet>(null);
+  const bottomSheetRef = useRef<RBSheet>(null);
 
   function handleOpen() {
-    bottomSheetRef.current?.expand();
+    bottomSheetRef.current?.open();
   }
 
   return (
@@ -28,12 +34,23 @@ function Widget() {
         />
       </TouchableOpacity>
 
-      {/* <BottomSheet
+      <RBSheet
         ref={bottomSheetRef}
-        snapPoints={[1, 280]}
+        openDuration={200}
+        closeOnDragDown={true}
+        closeOnPressMask={false}
+        animationType='none'
+        customStyles={{
+          wrapper: styles.wrapperRBSheet,
+          container: styles.containerRBSheet,
+          draggableIcon: styles.draggableIconRBSheet
+        }}
       >
-        
-      </BottomSheet> */}
+        <Form 
+          feedbackType='BUG'
+        />
+        {/* <Options /> */}
+      </RBSheet>
     </>
   );
 }
