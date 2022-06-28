@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowLeft } from 'phosphor-react';
 import { View, TextInput, Image, Text, TouchableOpacity } from 'react-native';
 
+import { Button } from '../Button';
 import { FeedbackType } from '../Widget';
 import { ScreenshotButton } from '../ScreenshotButton';
 
@@ -48,8 +49,10 @@ export function Form({ feedbackType }: Props) {
             <ScreenshotButton 
                 onTakeShot={() => {}}
                 onRemoveShot={() => {}}
-                screenshot=''
+                screenshot='https://avatars.githubusercontent.com/u/29258164?v=4'
             />
+
+            <Button isLoading={false} />
         </View>
     </View>
   );
