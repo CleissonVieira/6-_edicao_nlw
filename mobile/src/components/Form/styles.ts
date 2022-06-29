@@ -30,7 +30,7 @@ export const styles = StyleSheet.create({
   },
   input: {
     width: '100%',
-    height: 112,
+    height: 96,
     padding: 12,
     marginBottom: 8,
     borderRadius: 4,

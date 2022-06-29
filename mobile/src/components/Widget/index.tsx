@@ -5,6 +5,7 @@ import RBSheet from 'react-native-raw-bottom-sheet';
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
 
 import { Options } from '../Options';
+import { Success } from '../Success';
 import { Form } from '../Form';
 
 import { styles } from './styles';
@@ -46,9 +47,8 @@ function Widget() {
           draggableIcon: styles.draggableIconRBSheet
         }}
       >
-        <Form 
-          feedbackType='BUG'
-        />
+        {/* <Success /> */}
+        <Form feedbackType='BUG'/>
         {/* <Options /> */}
       </RBSheet>
     </>

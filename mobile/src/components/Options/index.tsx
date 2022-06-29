@@ -27,6 +27,7 @@ export function Options() {
           )
         }
       </View>
+      
       <Copyright />
     </View>
   );
