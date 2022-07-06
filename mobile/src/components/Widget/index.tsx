@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { TouchableOpacity } from 'react-native';
 import { ChatTeardropDots } from 'phosphor-react';
 import RBSheet from 'react-native-raw-bottom-sheet';
@@ -15,6 +15,8 @@ import { feedbackTypes } from '../../utils/feedbackTypes';
 export type FeedbackType = keyof typeof feedbackTypes;
 
 function Widget() {
+  const [feedbackType, setFeedbackType] = useState<FeedbackType | null>(null);
+  const [feedbackSend, setFeedbackSend] = useState(false);
 
   const bottomSheetRef = useRef<RBSheet>(null);
 
@@ -47,9 +49,21 @@ function Widget() {
           draggableIcon: styles.draggableIconRBSheet
         }}
       >
-        {/* <Success /> */}
-        <Form feedbackType='BUG'/>
-        {/* <Options /> */}
+        {
+          feedbackSend ?
+            <Success /> 
+          :
+            <>
+              {
+              feedbackType ?
+                <Form feedbackType={feedbackType}/>
+              :
+                <Options />
+              }
+            </>
+        }
+
+        />
       </RBSheet>
     </>
   );
