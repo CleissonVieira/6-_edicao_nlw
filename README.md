@@ -1,5 +1,5 @@
 # 6° Edição NLW
-## (Impulse)[https://nextlevelweek.com/episodios/impulse/abertura/edicao/8] 
+## [Mission: Impulse](https://nextlevelweek.com/episodios/impulse/abertura/edicao/8)
 
 ## Web
 - React
