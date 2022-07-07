@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft } from 'phosphor-react';
+import { ArrowLeft } from 'phosphor-react-native';
 import { captureScreen } from 'react-native-view-shot';
 import { View, TextInput, Image, Text, TouchableOpacity } from 'react-native';
 

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { TouchableOpacity } from 'react-native';
-import { ChatTeardropDots } from 'phosphor-react';
+import { TouchableOpacity, Text } from 'react-native';
+import { ChatTeardropDots } from 'phosphor-react-native';
 import RBSheet from 'react-native-raw-bottom-sheet';
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
 
@@ -62,8 +62,6 @@ function Widget() {
               }
             </>
         }
-
-        />
       </RBSheet>
     </>
   );

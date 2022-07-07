@@ -1,7 +1,5 @@
 import 'react-native-gesture-handler';
 
-import AppLoading from 'expo-app-loading';
-
 import { View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { 
@@ -22,7 +20,7 @@ export default function App() {
   });
 
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return null;
   }
 
   SplashScreen.hideAsync();

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Camera, Trash, } from 'phosphor-react';
+import { Camera, Trash, } from 'phosphor-react-native';
 import { View, TouchableOpacity, Image } from 'react-native';
 import { theme } from '../../theme';
 
